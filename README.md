@@ -1,7 +1,10 @@
 # Flight Tracking Data Analysis
-We are pulling down flight information from various flight tracking API's
+Pulling flight information from various flight tracking API's:
+- **scripts** directory - Contains various python scripts
+- **data** directory - Contains csv data from api's and processed image data
+- **animate** directory - Contains processed ffmpeg outputs from gathered images
 
-In order to set up the project I would suggest creating a conda virtual environment.
+To set up the project I would suggest creating a conda virtual environment.
 
 ```bash
 conda create -m condaEnv python=3.11
