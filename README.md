@@ -30,3 +30,12 @@ This will provide you with the geographic coordinates systems and mapping capabi
 ```
 conda install cartopy
 ```
+
+### Animations Folder
+Inside the **animate** folder, there is a bash script utilising ffmpeg to create the animated videos for the processed image data.
+
+It takes two arguments, the date of the folder and the region being viewed e.g.:
+
+```bash
+./mkvideo '2024-04-08' 'us'
+```
