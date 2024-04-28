@@ -1,8 +1,12 @@
+import os
 import sys
 import pandas as pd
 from flightradar24 import Api
 
 def main():
+    
+    # Git Folder Base Name
+    base_folder = os.path.dirname(sys.path[0])
 
     # Create API Instance
     fr_api = Api()
@@ -19,7 +23,7 @@ def main():
         data = eval(dict_api[key])
         data_list = pd.DataFrame(data)['rows'].tolist()
         df = pd.DataFrame(data_list)
-        df.to_csv(f'data/{key}.csv')
+        df.to_csv(f'{base_folder}/data/{key}.csv')
 
 if __name__ == "__main__":
     main()
