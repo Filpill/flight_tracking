@@ -30,8 +30,10 @@ pip install FlightRadar24
 
 ### CartoPy
 This will provide you with the geographic coordinates systems and mapping capabilities for the visualisations (in conjunction with matplotlib):
+
+At time of writing requires to build from source
 ```
-conda install cartopy
+pip install git+https://github.com/SciTools/cartopy.git
 ```
 
 ### Animations Folder
