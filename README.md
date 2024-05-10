@@ -22,16 +22,17 @@ Inside this git repo, I've added a submodule to the OpenSky API, so can from the
 pip install -e opensky-api/python
 ```
 
-### FlightRadar24API
-For the FlightRadar24API you can:
-```bash
-pip install FlightRadar24
-```
-
 ### CartoPy
 This will provide you with the geographic coordinates systems and mapping capabilities for the visualisations (in conjunction with matplotlib):
 
-At time of writing requires to build from source
+We require cartopy version 0.23.0, however at the time of writing the latest available package via pip or conda is 0.22.0. 
+
+Due to changes since the earlier builds, we are not able to get Stamen Map data with the existing features as they have migrated over to Stadia Maps API.
+
+The latest build (0.23.0) allows us to get the Stadia Maps data from their API without any error. 
+
+We can build the source version of Cartopy straight from Github by using the following command:
+
 ```
 pip install git+https://github.com/SciTools/cartopy.git
 ```
@@ -39,8 +40,8 @@ pip install git+https://github.com/SciTools/cartopy.git
 ### Animations Folder
 Inside the **animate** folder, there is a bash script utilising ffmpeg to create the animated videos for the processed image data.
 
-It takes two arguments, the date of the folder and the region being viewed e.g.:
+It takes two arguments, the date of the folder and the image folder to be processed e.g.:
 
 ```bash
-./mkvideo '2024-04-08' 'us'
+./mkvideo '2024-04-08' 'scatter'
 ```
