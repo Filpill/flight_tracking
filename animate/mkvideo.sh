@@ -7,4 +7,4 @@ base_folder="$(dirname $(pwd))"
 output="$base_folder/animate/videos"
 image_data="$base_folder/data/get_states/$1/$2/crop"
 
-ffmpeg -framerate 24 -pattern_type glob -i "${image_data}/*.png" $output/$1_$2_movements.mp4
+ffmpeg -framerate 18 -pattern_type glob -i "${image_data}/*.png" $output/$1_$2_movements.mp4
