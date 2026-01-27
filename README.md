@@ -1,4 +1,7 @@
 # Flight Tracking Data Analysis
+
+ <img src="https://raw.githubusercontent.com/Filpill/flight_tracking/main/data/samples/kde-flight-animation.gif" alt="drawing" width="1000"/>
+
 Pulling flight information from various flight tracking API's:
 - **scripts** directory - Contains various python scripts
 - **data** directory - Contains csv data from api's and processed image data
